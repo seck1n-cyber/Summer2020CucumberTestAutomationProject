@@ -8,7 +8,7 @@ Feature: As user I want to be able to login under different roles
 
     @smoke
   Scenario: Login as a sales manger
-    When user logs inn
+    When user logs in
     Then user should see dashboard page
 #
 #  @parametrized_test @smoke_test
