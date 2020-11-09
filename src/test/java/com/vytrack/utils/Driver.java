@@ -3,7 +3,6 @@ package com.vytrack.utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -45,6 +44,7 @@ public class Driver {
                         desiredCapabilities.setBrowserName("firefox");
                         URL gridUrl = new URL("http://18.205.163.87:4444/wd/hub");
                         driver = new RemoteWebDriver(gridUrl,desiredCapabilities);
+
                     }catch(Exception e){
                         e.printStackTrace();
                     }

@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         plugin = {"rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",
-        dryRun = false,
-        tags = "@negative_login",
+        dryRun = true,
+        tags = "",
         publish = true
 )
 public class CucumberRunner {
